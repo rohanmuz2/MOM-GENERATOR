@@ -23,10 +23,10 @@ ENV NAME World
 
 # Copy the Google Cloud service account key file into the Docker image
 # IMPORTANT: Replace 'path/to/your/service-account-key.json' with the actual path to your service account key file
-COPY path/to/your/service-account-key.json /app/
+# COPY path/to/your/service-account-key.json /app/
 
 # Set the GOOGLE_APPLICATION_CREDENTIALS environment variable
-ENV GOOGLE_APPLICATION_CREDENTIALS /app/service-account-key.json
+# ENV GOOGLE_APPLICATION_CREDENTIALS /app/service-account-key.json
 
 # Make port 9090 available to the world outside this container
 EXPOSE 9090
